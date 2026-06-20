@@ -1,0 +1,285 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050816;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4f8cff;
+    border-radius:20px;
+}
+
+
+
+.custom-nav{
+    background:rgba(5,8,22,0.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+    color:#ffffff !important;
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.nav-link{
+    color:#d5d5d5 !important;
+    margin-left:15px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#4f8cff !important;
+}
+
+
+
+.hero{
+    background:
+    radial-gradient(circle at top left,
+    rgba(79,140,255,0.3),
+    transparent 40%),
+
+    radial-gradient(circle at bottom right,
+    rgba(79,140,255,0.15),
+    transparent 40%),
+
+    #050816;
+}
+
+.welcome-text{
+    color:#4f8cff;
+    margin-bottom:20px;
+}
+
+.main-heading{
+    font-size:4.5rem;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.typing-container{
+    color:#4f8cff;
+    margin-bottom:20px;
+    min-height:50px;
+}
+
+.hero-description{
+    max-width:800px;
+    margin:auto;
+    color:#b8c2d9;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.custom-btn{
+    background:#4f8cff;
+    color:white;
+    padding:12px 30px;
+    border-radius:10px;
+    font-weight:600;
+    margin-right:10px;
+}
+
+.custom-btn:hover{
+    background:#3a73db;
+    color:white;
+}
+
+.outline-btn{
+    border:2px solid #4f8cff;
+    color:#4f8cff;
+    padding:12px 30px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.outline-btn:hover{
+    background:#4f8cff;
+    color:white;
+}
+
+
+
+.section-padding{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+    font-weight:700;
+    color:white;
+}
+
+
+.glass-card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:35px;
+    transition:0.4s;
+}
+
+.glass-card:hover{
+    transform:translateY(-8px);
+}
+
+
+
+.skill-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    font-size:1.1rem;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(79,140,255,0.4);
+}
+
+
+
+.project-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:30px;
+    height:100%;
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(79,140,255,0.35);
+}
+
+.project-card h4{
+    margin-bottom:15px;
+    color:#4f8cff;
+}
+
+
+
+.achievement-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.achievement-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(79,140,255,0.3);
+}
+
+
+
+.social-links{
+    margin-top:20px;
+}
+
+.social-links a{
+    color:white;
+    font-size:2rem;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#4f8cff;
+}
+
+
+
+footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    color:#b8c2d9;
+}
+
+
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .main-heading{
+        font-size:3rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .main-heading{
+        font-size:2.3rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .hero-description{
+        font-size:1rem;
+    }
+
+    .hero-buttons a{
+        display:block;
+        margin:10px auto;
+        width:220px;
+    }
+}
+```
